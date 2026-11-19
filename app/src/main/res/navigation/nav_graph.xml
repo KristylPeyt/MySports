@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mysports.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/mySportsFragment"
+        android:name="com.example.mysports.MySportsFragment"
+        android:label="My Sports">
+
+        <action
+            android:id="@+id/action_mySportsFragment_to_basketballFragment"
+            app:destination="@id/basketballFragment" />
+
+        <action
+            android:id="@+id/action_mySportsFragment_to_footballFragment"
+            app:destination="@id/footballFragment" />
+
+        <action
+            android:id="@+id/action_mySportsFragment_to_tennisFragment"
+            app:destination="@id/tennisFragment" />
+
+        <action
+            android:id="@+id/action_mySportsFragment_to_volleyballFragment"
+            app:destination="@id/volleyballFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.mysports.FavoritesFragment"
+        android:label="Favorites" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mysports.ProfileFragment"
+        android:label="Profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mysports.SettingsFragment"
+        android:label="Settings">
+
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/basketballFragment"
+        android:name="com.example.mysports.sports.BasketballFragment"
+        android:label="Basketball" />
+
+    <fragment
+        android:id="@+id/footballFragment"
+        android:name="com.example.mysports.sports.FootballFragment"
+        android:label="Football" />
+
+    <fragment
+        android:id="@+id/tennisFragment"
+        android:name="com.example.mysports.sports.TennisFragment"
+        android:label="Tennis" />
+
+    <fragment
+        android:id="@+id/volleyballFragment"
+        android:name="com.example.mysports.sports.VolleyballFragment"
+        android:label="Volleyball" />
+
+</navigation>
+
+
