@@ -69,3 +69,13 @@ MySports/
 ## 📌 Project Information
 
 My Sports is an educational project created to practice Android application development, Kotlin programming, XML interface design, and navigation between screens.
+
+## 📱 App Screenshots
+
+<p align="center">
+  <img src="Screenshots/home.png" width="250">
+  <img src="Screenshots/mysports.png" width="250">
+  <img src="Screenshots/mysports_click.png" width="250">
+  <img src="Screenshots/fav.png" width="250">
+  <img src="Screenshots/profile.png" width="250">
+</p>
